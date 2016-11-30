@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SeaBattle</class>
+ <widget class="QMainWindow" name="SeaBattle">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sea Battle</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menuGame">
+    <property name="title">
+     <string>game</string>
+    </property>
+    <addaction name="New_game"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>help</string>
+    </property>
+    <addaction name="Rules"/>
+    <addaction name="About_the_author"/>
+   </widget>
+   <widget class="QMenu" name="menuStyle">
+    <property name="title">
+     <string>style</string>
+    </property>
+    <addaction name="actionSea"/>
+    <addaction name="actionBoard"/>
+    <addaction name="actionDefault"/>
+   </widget>
+   <addaction name="menuGame"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menuStyle"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="Rules">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>rules</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="About_the_author">
+   <property name="text">
+    <string>about the author</string>
+   </property>
+  </action>
+  <action name="New_game">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>new game</string>
+   </property>
+  </action>
+  <action name="actionSea">
+   <property name="text">
+    <string>sea</string>
+   </property>
+  </action>
+  <action name="actionBoard">
+   <property name="text">
+    <string>board</string>
+   </property>
+  </action>
+  <action name="actionDefault">
+   <property name="text">
+    <string>default</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
